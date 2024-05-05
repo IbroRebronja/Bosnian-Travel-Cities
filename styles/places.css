@@ -173,15 +173,6 @@ main li img {
     border-radius:5px ;
   }
 
-  li a {
-    transition: transform 0.5s ease;
-    transform: scale(1);
-}
-
-li:hover a {
-    transform: scale(1.1);
-}
-
   .item-content {
     padding: 1rem;
   }
