@@ -13,7 +13,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 60px;
+  padding: 0.9375rem 3.75rem;
   position: absolute;
   width: 100%;
   top: 0;
@@ -22,13 +22,19 @@ header {
 }
 
 #page-logo a {
-  padding: 10px;
+  padding: 0.625rem;
   font-family: "Oleo Script", sans-serif;
   color: rgb(245, 243, 160);
-  font-size: 50px;
+  font-size: 3.125rem;
   text-decoration: none;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  transition: transform 0.5s ease; 
+  display: inline-block;
+}
+
+#page-logo a:hover {
+  transform: scale(1.03);
 }
 
 header ul {
@@ -36,14 +42,14 @@ header ul {
 }
 
 header li {
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 header a {
   color: rgb(255, 251, 0);
   text-decoration: none;
-  font-size: 20px;
-  padding: 12px;
+  font-size: 1.25rem;
+  padding: 0.75rem;
   text-shadow: 1px 1px 2px rgba (0, 0, 0, 0.2);
   border-radius: 6px;
 }
@@ -55,7 +61,7 @@ header nav a:hover {
 
 footer {
   background: linear-gradient(70deg, rgb(24, 24, 24), rgb(25, 29, 29));
-  padding: 36px 0;
+  padding: 2.25rem 0;
 }
 
 footer ul {
@@ -66,7 +72,7 @@ footer ul {
 footer li {
   width: 80px;
   height: 80px;
-  margin: 0 50px;
+  margin: 0 3.125rem;
 }
 
 footer img {
