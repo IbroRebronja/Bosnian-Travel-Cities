@@ -22,7 +22,7 @@ header nav a:hover {
 }
 
 main ul{
-  width: 1200px;
+  width: 75rem;
   margin: 0 auto 3rem auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -49,13 +49,13 @@ main li:hover {
 }
 
 main li img {
-  width: 300px;
-  height: 280px;
+  width: 18.75rem;
+  height: 17.5rem;
   object-fit: cover;
 }
 
 .item-content {
-  padding: 24px;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -78,4 +78,41 @@ main li img {
 
 .actions a:hover {
   background-color: rgb(216, 235, 236);
+}
+
+@media (max-width: 48rem) {
+  #page-logo a{
+    font-size:1.5rem;
+  }
+
+  header a{
+  display:none;
+  }
+
+  main li{
+    margin: auto;
+    padding: 0;
+  }
+
+  main ul {
+    grid-template-columns: 100%;
+    margin: auto;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  .item-content p {
+    font-size: 1rem;
+  }
+
+  .item-content {
+    width:50rem;
+    height: 10rem;
+  }
+
+  li:nth-of-type(1) {
+    grid-column:1/span 1;
+  }
 }
