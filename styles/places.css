@@ -40,6 +40,12 @@ main li {
   box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
   border-radius: 6px;
   overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+main li:hover {
+  transform: scale(1.01);
+  transition: transform 0.3s ease;
 }
 
 main li img {
@@ -66,10 +72,10 @@ main li img {
 .actions a {
   text-decoration:none;
   padding: 6px;
-  color: rgb(4, 223, 243);
+  color: rgb(53, 212, 226);
   border-radius:5px ;
 }
 
 .actions a:hover {
-  background-color: rgb(134, 206, 212);
+  background-color: rgb(216, 235, 236);
 }
