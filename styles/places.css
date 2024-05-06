@@ -159,6 +159,8 @@ main li img {
     grid-template-columns: 100%;
     margin: auto;
     width:90%;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
   }
 
   main li{
