@@ -79,12 +79,13 @@
   box-shadow: 2px 4px 8px rgb(68,67,67);
   border-radius: 10px;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  will-change: transform;
 }
 
 .destination img:hover {
   transform: scale(1.1);
-  transition: transform 0.3s ease;
+  filter: blur(0);
 }
 
 .destination p {
@@ -107,11 +108,13 @@
   justify-content: space-around;
   display: none;
   transition: transform 0.5s ease;
+  will-change: transform;
 }
 
 .menu-btn:hover{
   transform: scale(1.1);
   transition: transform 0.5s ease;
+  filter: blur(0);
 }
 
 .menu-btn span {

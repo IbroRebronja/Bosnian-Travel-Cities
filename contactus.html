@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Oleo+Script:wght@700&family=Quicksand:wght@300;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles/shared.css" />
+  <link rel="stylesheet" href="styles/contactus.css" />
+  <script src="app.js" defer async></script>
+  <title>Bosnia & Herzegovina Cities</title>
+</head>
+
+<body>
+  <header>
+    <div id="page-logo">
+      <a href="index.html">Bosnia & Herzegovina Cities</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="places.html">Destinations</a></li>
+      </ul>
+    </nav>
+    <a href="#side-drawer" class="menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+  </header>
+
+  <main>
+    <form action="/" method="GET">
+      <section>
+        <h2>Your personal details</h2>
+        <ul>
+          <li>
+            <label for="username">Your name</label>
+            <input type="text" name="user-name" id="username" required placeholder="Enter Your Name" />
+          </li>
+          <li>
+            <label for="useremail">Your email address</label>
+            <input type="email" name="user-email" id="useremail" required placeholder="example@test.com" />
+          </li>
+          <li>
+            <label for="userpassword">Your Password</label>
+            <input type="password" name="user-password" id="userpassword" placeholder="Enter Your Password" required
+              minlength="8" />
+          </li>
+          <li>
+            <label for="showpassword" id="showpassword">Show Password</label>
+            <br>
+            <input type="checkbox" id="showpassword" onclick="myFunction()">
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>More details</h2>
+        <ul>
+          <li>
+            <label for="userage">Your age</label>
+            <input type="number" step="1" name="user-age" id="userage" required min="18" max="120" />
+          </li>
+          <li>
+            <label for="birthdate">Your Birthday</label>
+            <input type="date" name="user-birthdate" id="birthdate" required min="1904-01-01" />
+          </li>
+          <li>
+            <label for="yourgender">Your Gender</label>
+            <select id="gender" name="yourgender">
+              <option value="">Please select one…</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+              <option value="noanswer">Prefer not to answer</option>
+            </select>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <label for="usermessage">Your message</label>
+        <textarea id="usermessage" name="user-message" required rows="3"></textarea>
+      </section>
+
+
+      <section>
+        <h2>How should we verify your account?</h2>
+        <ul>
+          <li class="form-control-inline">
+            <input type="radio" name="verify" id="verify-text-message" value="text-message" required />
+            <label for="verify-text-message">Via text message (SMS)</label>
+          </li>
+          <li class="form-control-inline">
+            <input type="radio" name="verify" id="verify-phone" value="phone" required />
+            <label for="verify-phone">Via a phone call</label>
+          </li>
+          <li class="form-control-inline">
+            <input type="radio" name="verify" id="verify-email" value="email" required />
+            <label for="verify-email">Via an email</label>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>How should we contact you?</h2>
+        <ul>
+          <li class="form-control-inline">
+            <input type="checkbox" id="contact-email" name="contact" value="phone" />
+            <label for="contact-email">Contact me via email</label>
+          </li>
+          <li class="form-control-inline">
+            <input type="checkbox" id="contact-phone" name="contact" />
+            <label for="contact-phone">Contact me via phone</label>
+          </li>
+        </ul>
+      </section>
+
+      <hr>
+
+      <section>
+        <h2>Terms & Conditions</h2>
+        <div class="form-control-inline">
+          <input type="checkbox" id="agreee-terms" name="terms" value="email" required />
+          <label for="agreee-terms">Agree to terms</label>
+        </div>
+      </section>
+      <section>
+        <button type="submit">Submit</button>
+      </section>
+    </form>
+  </main>
+  
+  <aside id="side-drawer">
+    <header>
+      <a href="#" class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="places.html">Destinations</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <footer>
+    <ul>
+      <li><a href="https://www.instagram.com/p/CxxeivYMPpC/" target="_blank"><img src="images/icons/instagram.png"
+            alt="Instagram Logo"></a></li>
+      <li><a href="https://www.facebook.com/groups/121884106451487/" target="_blank"><img
+            src="images/icons/facebook.png" alt="facebook Logo"></a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>
