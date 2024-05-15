@@ -54,3 +54,10 @@ function myFunction() {
       icon.classList.add("fa-eye-slash");
   }
 }
+
+//only put numbers in phone number field
+
+function validatePhoneNumber(event) {
+  const input = event.target;
+  input.value = input.value.replace(/[^+\d]/g, '');
+}
