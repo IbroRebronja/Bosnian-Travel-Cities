@@ -13,7 +13,7 @@ function setDefaultBirthdate() {
 
 setDefaultBirthdate();
 
-//password must contain bla bla bla u get the gist
+//password must contain this and that , bla bla bla u get the gist of it
 
 function validateForm() {
   var password = document.getElementById("userpassword").value;
