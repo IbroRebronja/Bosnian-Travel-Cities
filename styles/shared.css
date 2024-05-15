@@ -127,7 +127,6 @@ footer img {
 
 #side-drawer ul {
   list-style: none;
-  margin: 0;
   padding: 4rem 1rem;
   display: flex;
   flex-direction: column;
@@ -140,5 +139,24 @@ footer img {
 
 #side-drawer a {
   color: rgb(253,239,213);
-  font-size: 2rem;
+  text-decoration: none;
+  display:flex;
+  font-size: clamp(3rem, 8vw, 8rem);
+  padding: clamp(0.25rem,0.5vw, 1rem) 0rem;
 }
+
+#side-drawer ul li a {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+#side-drawer ul li:hover a {
+  opacity: 1;
+}
+
+#side-drawer ul:hover li a:not(:hover) {
+  opacity: 0.3;
+}
+
+/* Not really how i wanted this to work ^ but it'll do for now I guess*\
+/*This is for the items in menu button 768px and less*\

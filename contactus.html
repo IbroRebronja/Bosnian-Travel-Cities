@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="styles/shared.css" />
   <link rel="stylesheet" href="styles/contactus.css" />
   <script src="javascript/app.js" defer async></script>
-  <script src="javascript/myscripts.js" defer async></script>
+  <script src="javascript/contactus.js" defer async></script>
   <title>Bosnia & Herzegovina Cities</title>
 </head>
 
@@ -35,17 +35,21 @@
   </header>
 
   <main>
-    <form action="/" method="GET">
+    <form action="/" method="GET" onsubmit="return validateForm()">
       <section>
         <h2>Your personal details</h2>
         <ul>
           <li>
-            <label for="username">Your name</label>
+            <label for="username">Your Name</label>
             <input type="text" name="user-name" id="username" required placeholder="Enter Your Name" />
           </li>
           <li>
-            <label for="useremail">Your email address</label>
+            <label for="useremail">Your Email Address</label>
             <input type="email" name="user-email" id="useremail" required placeholder="example@test.com" />
+          </li>
+          <li>
+            <label for="userphone">Your Phone Number</label>
+            <input type="tel" name="user-phone" id="userphone" placeholder="e.g., +1234567890" />
           </li>
           <li>
             <label for="userpassword">Your Password</label>
@@ -55,18 +59,19 @@
           <li>
             <label for="showpassword" id="showpassword">Show Password</label>
             <br>
-            <input type="checkbox" id="showpassword" onclick="myFunction()">
+            <input type="checkbox" id="showpasswordbtn" id="showpassword" onclick="myFunction()">
           </li>
         </ul>
       </section>
 
       <section>
+        <label for="usermessage">Details about yourself that you want others to be able to view</label>
+        <textarea id="usermessage" name="user-message" required rows="3"></textarea>
+      </section>
+
+      <section>
         <h2>More details</h2>
         <ul>
-          <li>
-            <label for="userage">Your age</label>
-            <input type="number" step="1" name="user-age" id="userage" required min="18" max="120" />
-          </li>
           <li>
             <label for="birthdate">Your Birthday</label>
             <input type="date" name="user-birthdate" id="birthdate" required min="1904-01-01" />
@@ -74,36 +79,30 @@
           <li>
             <label for="yourgender">Your Gender</label>
             <select id="gender" name="yourgender">
-              <option value="">Please select one…</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="other">Other</option>
-              <option value="noanswer">Prefer not to answer</option>
+              <option value="selectgender" disabled selected>Please select one…</option>
+              <option value="male" required>Male</option>
+              <option value="female" required>Female</option>
+              <option value="other" required>Other</option>
+              <option value="noanswer" required>Prefer not to answer</option>
             </select>
           </li>
         </ul>
       </section>
 
       <section>
-        <label for="usermessage">Your message</label>
-        <textarea id="usermessage" name="user-message" required rows="3"></textarea>
-      </section>
-
-
-      <section>
         <h2>How should we verify your account?</h2>
         <ul>
           <li class="form-control-inline">
             <input type="radio" name="verify" id="verify-text-message" value="text-message" required />
-            <label for="verify-text-message">Via text message (SMS)</label>
+            <label for="verify-text-message">Via Text Message (SMS)</label>
           </li>
           <li class="form-control-inline">
             <input type="radio" name="verify" id="verify-phone" value="phone" required />
-            <label for="verify-phone">Via a phone call</label>
+            <label for="verify-phone">Via a Phone Call</label>
           </li>
           <li class="form-control-inline">
             <input type="radio" name="verify" id="verify-email" value="email" required />
-            <label for="verify-email">Via an email</label>
+            <label for="verify-email">Via an Email</label>
           </li>
         </ul>
       </section>
@@ -112,12 +111,12 @@
         <h2>How should we contact you?</h2>
         <ul>
           <li class="form-control-inline">
-            <input type="checkbox" id="contact-email" name="contact" value="phone" />
-            <label for="contact-email">Contact me via email</label>
+            <input type="checkbox" id="contact-email" name="contact" value="phone" required />
+            <label for="contact-email">Contact me via Email</label>
           </li>
           <li class="form-control-inline">
-            <input type="checkbox" id="contact-phone" name="contact" />
-            <label for="contact-phone">Contact me via phone</label>
+            <input type="checkbox" id="contact-phone" name="contact"/>
+            <label for="contact-phone">Contact me via Phone</label>
           </li>
         </ul>
       </section>
@@ -127,8 +126,8 @@
       <section>
         <h2>Terms & Conditions</h2>
         <div class="form-control-inline">
-          <input type="checkbox" id="agreee-terms" name="terms" value="email" required />
-          <label for="agreee-terms">Agree to terms</label>
+          <input type="checkbox" id="agree-terms" name="terms" value="email" required />
+          <label for="agree-terms">I agree to the Terms & Conditions</label>
         </div>
       </section>
       <section>
@@ -146,10 +145,10 @@
       </a>
     </header>
     <nav>
-      <ul>
-        <li><a href="index.html">Home Page</a></li>
-        <li><a href="places.html">Destinations</a></li>
-        <li><a href="contactus.html">Contact Us</a></li>
+      <ul id="menu-items">
+        <li><a href="index.html" class="menu-item">Home Page</a></li>
+        <li><a href="places.html" class="menu-item">Destinations</a></li>
+        <li><a href="contactus.html" class="menu-item">Contact Us</a></li>
       </ul>
     </nav>
   </aside>

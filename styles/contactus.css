@@ -33,6 +33,7 @@ form {
   border-radius: 6px;
 }
 
+
 label {
   margin-bottom: 0.5rem;
   display: block;
@@ -53,13 +54,15 @@ select {
 
 textarea {
   resize: vertical;
+  min-height: 6.25rem;
+  max-height: 18rem;
 }
 
 input:focus,
 textarea:focus {
-  background-color: rgb(219, 190, 253);
-  color: rgb(39, 3, 63);
-  border-color: rgb(39, 3, 63);
+  background-color: rgb(245, 240, 250);
+  color: rgb(29, 2, 48);
+  border-color: rgb(29, 2, 48);
 }
 
 button {
@@ -89,7 +92,7 @@ button:hover {
 
 hr {
   padding: 0.05rem;
-  color:black;
+  color: black;
   background-color: black;
 }
 
@@ -99,17 +102,20 @@ hr {
   text-align: center;
 }
 
+#gender option[value="selectgender"] {
+  display: none;
+}
 
 @media (max-width: 48rem) {
-  #page-logo a{
-    font-size:1.5rem;
+  #page-logo a {
+    font-size: 1.5rem;
   }
 
-  header a{
-  display:none;
+  header a {
+    display: none;
   }
 
   .menu-btn {
-    display:flex;
+    display: flex;
   }
 }

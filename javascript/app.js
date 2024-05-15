@@ -5,5 +5,5 @@
 //
 
 
-
+//ignore this for now, was an attempt to get the 'viewing' on all devices xdd
 
