@@ -143,7 +143,4 @@ main li img {
     font-size: 1rem;
   }
 
-  li:nth-of-type(1) {
-    grid-column:1/span 1;
-  }
 }
