@@ -107,14 +107,21 @@ main li img {
     grid-template-columns: 100%;
     margin: auto;
     width:90%;
+    padding: 0;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
   }
 
   main li{
-    margin: auto;
+    margin: 20px auto;
     padding:0.1rem;
     flex-direction: column;
+    max-width: calc(100% -40px);
+  }
+
+  li:nth-of-type(1),
+  li:nth-of-type(10) {
+    grid-column: initial;
   }
 
   main li img {
@@ -129,11 +136,11 @@ main li img {
 
 
   .item-content h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .item-content p {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 
   li:nth-of-type(1) {
