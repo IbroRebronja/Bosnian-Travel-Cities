@@ -38,13 +38,19 @@ function validateForm() {
   return true;
 }
 
-// This is used to show your password but... please make this better somehow - later on of course
+//used for showing password, the eyelash to the right
 
 function myFunction() {
   var x = document.getElementById("userpassword");
+  var icon = document.getElementById("showpasswordicon");
+  
   if (x.type === "password") {
-    x.type = "text";
+      x.type = "text";
+      icon.classList.remove("fa-eye-slash");
+      icon.classList.add("fa-eye");
   } else {
-    x.type = "password";
+      x.type = "password";
+      icon.classList.remove("fa-eye");
+      icon.classList.add("fa-eye-slash");
   }
 }

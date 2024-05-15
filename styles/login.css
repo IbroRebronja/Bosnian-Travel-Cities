@@ -26,13 +26,15 @@ ul {
 }
 
 form {
-  width: 30rem;
+  display: block;
+  width: 40rem;
   margin: 3rem auto;
   background-color: rgb(255, 255, 255);
   padding: 1rem;
+  overflow: hidden;
   border-radius: 6px;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.2);
 }
-
 
 label {
   margin-bottom: 0.5rem;
@@ -96,10 +98,24 @@ hr {
   background-color: black;
 }
 
-#showpassword {
-  margin: 0;
-  padding: 0;
-  text-align: center;
+#password-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#userpassword {
+  padding-right: 30px;
+  flex: 1;
+}
+
+#showpasswordicon {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-100%);
+  cursor: pointer;
+  z-index: 1;
 }
 
 #gender option[value="selectgender"] {
