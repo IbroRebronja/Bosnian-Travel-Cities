@@ -87,7 +87,7 @@ main li img {
 }
 
 /* 320px — 480px: Mobile devices */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   body {
     font-size: 14px; /* Adjust body font size for better readability */
   }
@@ -173,6 +173,8 @@ main li img {
 
   .menu-btn {
     display: flex;
+    width: 2.3rem;
+    height: 2.3rem;
   }
 
   main ul {
@@ -202,12 +204,16 @@ main li img {
     border-radius: 5px;
   }
 
+  #page-logo a {
+    font-size: 1.5rem;
+  }
+
   .item-content {
     padding: 1rem;
   }
 
   .item-content h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .item-content p {
@@ -260,7 +266,7 @@ main li img {
   }
 
   #page-logo a {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   header a {
@@ -270,10 +276,6 @@ main li img {
   footer li {
     width: 60px;
     height: 60px;
-  }
-
-  .menu-btn {
-    display: flex;
   }
 
   #side-drawer {
@@ -323,7 +325,7 @@ main li img {
   }
 
   #page-logo a {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   header a {
