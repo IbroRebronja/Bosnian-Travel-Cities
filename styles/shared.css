@@ -22,7 +22,6 @@ header {
   top: 0;
   left: 0;
   box-sizing: border-box;
-
 }
 
 #page-logo a {
@@ -65,6 +64,7 @@ header nav a:hover {
 }
 
 footer {
+  margin-top: auto;
   background: linear-gradient(70deg, rgb(24, 24, 24), rgb(25, 29, 29));
   padding: 2.25rem 0;
 }
