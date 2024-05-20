@@ -13,7 +13,7 @@ header {
 #hero-content {
   width: 900px;
   background-color: rgba(51, 47, 47, 0.8);
-  box-shadow: 2px 4px 8px rgb(68,67,67);
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
   border-radius: 8px;
   text-align: center;
   padding: 3.125rem 0;
@@ -46,23 +46,23 @@ header {
   font-size: 1.5rem;
   font-weight: bold;
   border-radius: 8px;
-  box-shadow: 2px 4px 8px rgb(68,67,67);
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
 }
 
 #hero-content a:hover {
-    background-color: rgb(255,238,0);
+  background-color: rgb(255, 238, 0);
 }
 
 #highlights {
   padding: 1.5rem;
-  background: linear-gradient(0deg,rgb(185, 238, 177),rgb(202,243,240));
+  background: linear-gradient(0deg, rgb(185, 238, 177), rgb(202, 243, 240));
 }
 
 #highlights h2 {
   text-transform: uppercase;
   text-align: center;
   font-size: 2.5rem;
-  color: rgb(59,65,64);
+  color: rgb(59, 65, 64);
   margin: 1.5rem 0;
 }
 
@@ -81,7 +81,7 @@ header {
 .destination img {
   height: 220px;
   width: 310px;
-  box-shadow: 2px 4px 8px rgb(68,67,67);
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
   border-radius: 10px;
   object-fit: cover;
   transition: transform 0.3s ease, filter 0.3s ease;
@@ -97,7 +97,7 @@ header {
   text-align: center;
   text-transform: uppercase;
   font-size: 1.5rem;
-  color: rgb(124,123,123);
+  color: rgb(124, 123, 123);
   margin: 1.25rem;
 }
 
@@ -106,17 +106,66 @@ header {
 }
 
 @media (max-width: 48rem) {
-  #page-logo a{
-    font-size:1.5rem;
+  #hero {
+    height: 400px; /* Adjust the height for smaller screens */
+    background-size: contain;
   }
 
-  header a{
-  display:none;
+  #hero-content {
+    width: 90%;
+    padding: 1rem 0;
+    top: 10rem;
+  }
+
+  #hero-content h1 {
+    font-size: 2rem;
+  }
+
+  #hero-content p,
+  #hero-content a {
+    font-size: 1rem;
+  }
+
+  #highlights {
+    padding: 1rem;
+  }
+
+  #highlights h2 {
+    font-size: 2rem;
+  }
+
+  #destinations {
+    flex-direction: column;
+  }
+
+  .destination {
+    margin: 1rem 0;
+  }
+
+  .destination img {
+    height: 365px;
+    width: 650px;
+  }
+  .destination img:hover {
+    transform: scale(1);
+  }
+
+  .destination p {
+    font-size: 1.5rem;
+  }
+  header {
+    padding: 0.5rem 1rem;
+  }
+
+  #page-logo a {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    display: none; /* Hide navigation menu */
   }
 
   .menu-btn {
-    display:flex;
+    display: flex; /* Show the menu button */
   }
 }
-
-
