@@ -107,7 +107,7 @@ header {
 
 @media (max-width: 48rem) {
   #hero {
-    height: 400px; /* Adjust the height for smaller screens */
+    height: 400px;
     background-size: contain;
   }
 
@@ -153,19 +153,16 @@ header {
   .destination p {
     font-size: 1.5rem;
   }
-  header {
-    padding: 0.5rem 1rem;
-  }
 
   #page-logo a {
     font-size: 1.5rem;
   }
 
   nav ul {
-    display: none; /* Hide navigation menu */
+    display: none;
   }
 
   .menu-btn {
-    display: flex; /* Show the menu button */
+    display: flex;
   }
 }
