@@ -50,21 +50,23 @@
         <ul>
           <li>
             <label for="username">Your Name</label>
-            <input type="text" name="user-name" id="username" required placeholder="Enter Your Name" />
+            <input type="text" name="user-name" id="username" required placeholder="Enter Your Name" maxlength="60" />
           </li>
           <li>
             <label for="useremail">Your Email Address</label>
-            <input type="email" name="user-email" id="useremail" required placeholder="example@test.com" />
+            <input type="email" name="user-email" id="useremail" required placeholder="example@test.com"
+              maxlength="64" />
           </li>
           <li>
             <label for="userphone">Your Phone Number</label>
-            <input type="tel" name="user-phone" id="userphone" placeholder="e.g., +1234567890" oninput="validatePhoneNumber(event)" />
+            <input type="tel" name="user-phone" id="userphone" placeholder="e.g., +1234567890"
+              oninput="validatePhoneNumber(event)" maxlength="15" />
           </li>
           <li>
             <label for="userpassword">Your Password</label>
             <div id="password-container">
               <input type="password" name="user-password" id="userpassword" placeholder="Enter Your Password" required
-                minlength="8" />
+                minlength="8" maxlength="64" />
               <i class="fas fa-eye-slash" id="showpasswordicon" onclick="myFunction()"></i>
             </div>
           </li>
@@ -136,7 +138,7 @@
           <input type="checkbox" id="agree-terms" name="terms" value="email" required />
           <label for="agree-terms">I agree to the Terms & Conditions</label>
         </div>
-          <h4>Already have an account? <a href="login.html">Log in</a></h4>
+        <h4>Already have an account? <a href="login.html">Log in</a></h4>
       </section>
       <section>
         <button type="submit">Submit</button>

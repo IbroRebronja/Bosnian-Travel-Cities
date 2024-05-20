@@ -50,13 +50,14 @@
         <ul>
           <li>
             <label for="useremail">Your Email Address</label>
-            <input type="email" name="user-email" id="useremail" required placeholder="example@test.com" />
+            <input type="email" name="user-email" id="useremail" required placeholder="example@test.com"
+              maxlength="64" />
           </li>
           <li>
             <label for="userpassword">Your Password</label>
             <div id="password-container">
               <input type="password" name="user-password" id="userpassword" placeholder="Enter Your Password" required
-                minlength="8" />
+                minlength="8" maxlength="64" />
               <i class="fas fa-eye-slash" id="showpasswordicon" onclick="myFunction()"></i>
             </div>
           </li>
@@ -66,7 +67,7 @@
       <hr>
 
       <section>
-          <h4>Don't have an account? <a href="register.html">Sign Up</a></h4>
+        <h4>Don't have an account? <a href="register.html">Sign Up</a></h4>
         <button type="submit">Submit</button>
       </section>
     </form>
