@@ -1,6 +1,9 @@
 body {
+  min-height: 100vh;
   font-family: "Quicksand", sans-serif;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 ul {
@@ -19,6 +22,7 @@ header {
   top: 0;
   left: 0;
   box-sizing: border-box;
+
 }
 
 #page-logo a {
@@ -49,14 +53,14 @@ header li {
 header a {
   color: rgb(255, 251, 0);
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   padding: 0.75rem;
   text-shadow: 1px 1px 2px rgba (0, 0, 0, 0.2);
   border-radius: 6px;
 }
 
 header nav a:hover {
-  color: rgb(77, 77, 77);
+  color: rgb(255, 255, 255);
   background-color: rgb(255, 251, 0);
 }
 
@@ -81,10 +85,9 @@ footer img {
   height: 100%;
 }
 
-
 .menu-btn {
-  width:3rem;
-  height:3rem;
+  width: 3rem;
+  height: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -92,26 +95,26 @@ footer img {
   transition: transform 0.5s ease;
 }
 
-.menu-btn:hover{
+.menu-btn:hover {
   transform: scale(1.1);
   transition: transform 0.5s ease;
 }
 
 .menu-btn span {
   width: 100%;
-  height:0.1875rem;
-  background-color: white;
+  height: 0.1875rem;
+  background-color: rgb(255, 255, 255);
 }
 
 #side-drawer {
   width: 100%;
   height: 100%;
-  background-color: rgb(29,26,27);
+  background-color: rgb(29, 26, 27);
   position: fixed;
   top: 0;
-  left: 0; 
-  display:none;
-  z-index:2;
+  left: 0;
+  display: none;
+  z-index: 3;
 }
 
 #side-drawer:target {
@@ -139,11 +142,11 @@ footer img {
 }
 
 #side-drawer a {
-  color: rgb(253,239,213);
+  color: rgb(230, 229, 227);
   text-decoration: none;
-  display:flex;
+  display: flex;
   font-size: clamp(3rem, 8vw, 8rem);
-  padding: clamp(0.25rem,0.5vw, 1rem) 0rem;
+  padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
 }
 
 #side-drawer ul li a {
@@ -159,5 +162,60 @@ footer img {
   opacity: 0.3;
 }
 
-/* Not really how i wanted this to work ^ but it'll do for now I guess*\
-/*This is for the items in menu button 768px and less*\
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: -8.5rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ebeaea;
+  min-width: 10rem;
+  box-shadow: 0px 1px 8px 5px rgba(32, 31, 31, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(90, 89, 89);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #ccc;
+  text-shadow: none;
+}
+
+.dropdown-content a:last-child {
+  border-bottom: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #437545;
+}
+
+h4 a {
+  text-decoration: none;
+}
+
+h4 a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 48rem) {
+  #side-drawer header {
+    position: static;
+    background-color: transparent;
+    border-bottom: transparent;
+    margin-bottom: 2.5rem;
+  }
+}

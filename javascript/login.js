@@ -55,7 +55,7 @@ function myFunction() {
   }
 }
 
-//only put numbers in phone number field
+//only put numbers in phone number field (and + sign)
 
 function validatePhoneNumber(event) {
   const input = event.target;

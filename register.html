@@ -12,7 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Oleo+Script:wght@700&family=Quicksand:wght@300;500&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="styles/shared.css" />
-  <link rel="stylesheet" href="styles/login.css" />
+  <link rel="stylesheet" href="styles/register.css" />
   <script src="javascript/app.js" defer async></script>
   <script src="javascript/login.js" defer async></script>
   <title>Bosnia & Herzegovina Cities</title>
@@ -46,11 +46,19 @@
   <main>
     <form action="/" method="GET" onsubmit="return validateForm()">
       <section>
-        <h2>Login</h2>
+        <h2>Your personal details</h2>
         <ul>
+          <li>
+            <label for="username">Your Name</label>
+            <input type="text" name="user-name" id="username" required placeholder="Enter Your Name" />
+          </li>
           <li>
             <label for="useremail">Your Email Address</label>
             <input type="email" name="user-email" id="useremail" required placeholder="example@test.com" />
+          </li>
+          <li>
+            <label for="userphone">Your Phone Number</label>
+            <input type="tel" name="user-phone" id="userphone" placeholder="e.g., +1234567890" oninput="validatePhoneNumber(event)" />
           </li>
           <li>
             <label for="userpassword">Your Password</label>
@@ -63,10 +71,74 @@
         </ul>
       </section>
 
+      <section>
+        <label for="usermessage">Details about yourself that you want others to be able to view</label>
+        <textarea id="usermessage" name="user-message" required rows="3"></textarea>
+      </section>
+
+      <section>
+        <h2>More details</h2>
+        <ul>
+          <li>
+            <label for="birthdate">Your Birthday</label>
+            <input type="date" name="user-birthdate" id="birthdate" required min="1904-01-01" />
+          </li>
+          <li>
+            <label for="yourgender">Your Gender</label>
+            <select id="gender" name="yourgender">
+              <option value="selectgender" disabled selected>Please select one…</option>
+              <option value="male" required>Male</option>
+              <option value="female" required>Female</option>
+              <option value="other" required>Other</option>
+              <option value="noanswer" required>Prefer not to answer</option>
+            </select>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>How should we verify your account?</h2>
+        <ul>
+          <li class="form-control-inline">
+            <input type="radio" name="verify" id="verify-text-message" value="text-message" required />
+            <label for="verify-text-message">Via Text Message (SMS)</label>
+          </li>
+          <li class="form-control-inline">
+            <input type="radio" name="verify" id="verify-phone" value="phone" required />
+            <label for="verify-phone">Via a Phone Call</label>
+          </li>
+          <li class="form-control-inline">
+            <input type="radio" name="verify" id="verify-email" value="email" required />
+            <label for="verify-email">Via an Email</label>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>How should we contact you?</h2>
+        <ul>
+          <li class="form-control-inline">
+            <input type="checkbox" id="contact-email" name="contact" value="phone" required />
+            <label for="contact-email">Contact me via Email</label>
+          </li>
+          <li class="form-control-inline">
+            <input type="checkbox" id="contact-phone" name="contact" />
+            <label for="contact-phone">Contact me via Phone</label>
+          </li>
+        </ul>
+      </section>
+
       <hr>
 
       <section>
-          <h4>Don't have an account? <a href="register.html">Sign Up</a></h4>
+        <h2>Terms & Conditions</h2>
+        <div class="form-control-inline">
+          <input type="checkbox" id="agree-terms" name="terms" value="email" required />
+          <label for="agree-terms">I agree to the Terms & Conditions</label>
+        </div>
+          <h4>Already have an account? <a href="login.html">Log in</a></h4>
+      </section>
+      <section>
         <button type="submit">Submit</button>
       </section>
     </form>
