@@ -108,6 +108,80 @@ header {
 /* 320px — 480px: Mobile devices */
 @media (max-width: 480px) {
 
+  header {
+    padding: 0.5rem 1rem;
+    align-items: center;
+  }
+
+  #page-logo a {
+    font-size: 1.2rem;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+
+  #hero {
+    height: 400px;
+    background-size: cover;
+  }
+
+  #hero-content {
+    width: 70%;
+    padding: 2rem 1rem;
+    top: 9.5rem;
+  }
+
+  #hero-content h1 {
+    font-size: 1rem;
+  }
+
+  #hero-content p, #hero-content a {
+    font-size: 0.7rem;
+  }
+
+  #highlights {
+    padding: 1rem;
+  }
+
+  #highlights h2 {
+    font-size: 1.5rem;
+  }
+
+  #destinations {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .destination {
+    margin: 1rem 0;
+    width: 90%;
+  }
+
+  .destination img {
+    width: 100%;
+    height: auto;
+  }
+
+  .destination p {
+    font-size: 1.2rem;
+  }
+
+  footer li {
+    width: 50px;
+    height: 50px;
+  }
+
+  .menu-btn {
+    display: flex;
+    width: 2.1rem;
+    height: 2.1rem;
+  }
 }
 
 /* 481px — 768px: iPads, Tablets */
@@ -150,7 +224,7 @@ header {
 
   .destination img {
     height: 365px;
-    width: 650px;
+    width: 100%;
   }
   .destination img:hover {
     transform: scale(1);
