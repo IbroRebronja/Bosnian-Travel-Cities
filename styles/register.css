@@ -122,9 +122,44 @@ hr {
   display: none;
 }
 
-@media (max-width: 48rem) {
+/* 320px — 480px: Mobile devices */
+@media (max-width: 480px) {
+
+  form {
+    width: 80%;
+  }
+
+  main ul {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  label {
+    font-size: 0.875rem;
+  }
+
+  header {
+    padding: 0.625rem 1.25rem;
+    margin: 0.2rem;
+  }
+
   #page-logo a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  header a {
+    font-size: 1.2rem;
+  }
+
+  footer li {
+    width: 50px;
+    height: 50px;
   }
 
   header a {
@@ -133,5 +168,118 @@ hr {
 
   .menu-btn {
     display: flex;
+    width: 2.1rem;
+    height: 2.1rem;
   }
 }
+
+/* 481px — 768px: iPads, Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  header a {
+    display: none;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  .menu-btn {
+    display: flex;
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+
+  main ul {
+    grid-template-columns: 100%;
+    margin: auto;
+    width: 100%;
+    padding: 0;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  #page-logo a {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+  }
+}
+
+/* 769px — 1024px: Small screens, laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  main {
+    margin-bottom: 2.5rem;
+  }
+
+  main ul {
+    width: 100%;
+    margin: auto;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+  }
+
+  header {
+    padding: 0.9375rem 1.875rem;
+  }
+
+  #page-logo a {
+    font-size: 2rem;
+  }
+
+  header a {
+    font-size: 1.25rem;
+  }
+
+  footer li {
+    width: 60px;
+    height: 60px;
+  }
+
+  #side-drawer {
+    display: none;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+}
+
+/* 1025px — 1200px: Desktops, large screens */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  main ul {
+    width: 100%;
+    margin: auto;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  header {
+    padding: 0.975rem 2.75rem;
+  }
+
+  #page-logo a {
+    font-size: 2.5rem;
+  }
+
+  header a {
+    font-size: 1.5rem;
+  }
+
+  footer li {
+    width: 70px;
+    height: 70px;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+}
+

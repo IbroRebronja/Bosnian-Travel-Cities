@@ -105,7 +105,13 @@ header {
   color: rgb(38, 146, 117);
 }
 
-@media (max-width: 48rem) {
+/* 320px — 480px: Mobile devices */
+@media (max-width: 480px) {
+
+}
+
+/* 481px — 768px: iPads, Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
   #hero {
     height: 400px;
     background-size: contain;
@@ -167,7 +173,8 @@ header {
   }
 }
 
-@media (min-width: 48.0625rem) and (max-width: 64rem) {
+/* 769px — 1024px: Small screens, laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
   header {
     padding: 1rem 2rem;
   }
@@ -235,4 +242,8 @@ header {
   .destination p {
     font-size: 1.05687rem;
   }
+}
+
+/* 1025px — 1200px: Desktops, large screens */
+@media (min-width: 1025px) and (max-width: 1200px) {
 }

@@ -24,6 +24,10 @@ header {
   box-sizing: border-box;
 }
 
+header a {
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
 #page-logo a {
   padding: 0.625rem;
   font-family: "Oleo Script", sans-serif;

@@ -89,7 +89,7 @@ main li img {
 /* 320px — 480px: Mobile devices */
 @media (max-width: 480px) {
   body {
-    font-size: 14px; /* Adjust body font size for better readability */
+    font-size: 0.938rem;
   }
 
   main ul {
