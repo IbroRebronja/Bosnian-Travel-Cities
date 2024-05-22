@@ -1,10 +1,7 @@
 body {
   background: linear-gradient(30deg, rgb(253, 118, 118), #cfdf74);
+  background: linear-gradient(0deg, rgb(185, 238, 177), rgb(202, 243, 240));
   color: rgb(68, 68, 68);
-}
-
-#page-logo a {
-  color: rgb(142, 225, 235);
 }
 
 header {
@@ -15,7 +12,7 @@ header {
 }
 
 header a {
-  color: rgb(146, 226, 235);
+  color: rgb(255, 251, 0);
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 

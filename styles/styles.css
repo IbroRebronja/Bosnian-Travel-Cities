@@ -1,3 +1,7 @@
+body {
+  background: linear-gradient(0deg, rgb(185, 238, 177), rgb(202, 243, 240));
+}
+
 header {
   background-color: rgba(180, 222, 241, 0.8);
   border-bottom: 2px solid rgba(180, 222, 241, 0.8);
@@ -55,7 +59,6 @@ header {
 
 #highlights {
   padding: 1.5rem;
-  background: linear-gradient(0deg, rgb(185, 238, 177), rgb(202, 243, 240));
 }
 
 #highlights h2 {
