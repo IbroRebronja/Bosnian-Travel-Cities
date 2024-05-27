@@ -67,6 +67,13 @@ textarea:focus {
   border-color: rgb(29, 2, 48);
 }
 
+.form-email-text {
+  margin-top:-0.6rem;
+  margin-bottom: 1rem; 
+  font-size: .875em;
+  color: #9d9e9e;
+}
+
 button {
   display: block;
   font: inherit;
