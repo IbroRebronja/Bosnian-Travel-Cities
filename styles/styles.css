@@ -110,7 +110,6 @@ header {
 
 /* 320px — 480px: Mobile devices */
 @media (max-width: 480px) {
-
   header {
     padding: 0.5rem 1rem;
     align-items: center;
@@ -143,7 +142,8 @@ header {
     font-size: 1rem;
   }
 
-  #hero-content p, #hero-content a {
+  #hero-content p,
+  #hero-content a {
     font-size: 0.7rem;
   }
 

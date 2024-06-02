@@ -241,11 +241,103 @@ h4 a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 48rem) {
+/* 320px — 480px: Mobile devices */
+@media (max-width: 480px) {
+  footer {
+    padding: 1.4rem;
+    font-size: 0.8rem;
+  }
+
+  .footer ul,
+  .footer-right ul {
+    display: block;
+    align-items: center;
+  }
+
+  .footer-right img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 40px;
+    width: 40px;
+  }
+
+  .footer-right li {
+    margin: 0;
+  }
+}
+
+/* 481px — 768px: iPads, Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
   #side-drawer header {
     position: static;
     background-color: transparent;
     border-bottom: transparent;
     margin-bottom: 2.5rem;
+  }
+
+  footer {
+    padding: 1.4rem;
+    font-size: 1.3rem;
+  }
+
+  .footer-left {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .footer-right {
+    margin: 1.5rem;
+  }
+
+  .footer-right li img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 60px;
+    width: 60px;
+  }
+
+  .footer-right li {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* 769px — 1024px: Small screens, laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  footer {
+    padding: 1.4rem;
+    font-size: 1.4rem;
+  }
+
+  .footer-left {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .footer-right {
+    margin: 3rem;
+    margin: auto;
+  }
+
+  .footer-right li img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 75px;
+    width: 75px;
+  }
+
+  .footer-right ul {
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-right li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
