@@ -196,8 +196,6 @@ footer li {
   margin-left: -8.5rem;
 }
 
-
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -308,7 +306,7 @@ h4 a:hover {
 @media (min-width: 769px) and (max-width: 1024px) {
   footer {
     padding: 1.4rem;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 
   .footer-left {
@@ -339,5 +337,12 @@ h4 a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+/* 1025px — 1200px: Desktops, large screens */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  footer {
+    font-size: 1.15rem;
   }
 }
