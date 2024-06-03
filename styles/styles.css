@@ -222,9 +222,6 @@ header {
     height: 365px;
     width: 100%;
   }
-  .destination img:hover {
-    transform: scale(1);
-  }
 
   .destination p {
     font-size: 1.5rem;
