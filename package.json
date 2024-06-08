@@ -1,0 +1,17 @@
+{
+  "name": "landing-page-structure",
+  "version": "1.0.0",
+  "description": "Welcome to the Bosnia & Herzegovina Cities website project! This project is aimed at providing detailed information about various cities and destinations in Bosnia & Herzegovina, promoting tourism, cultural awareness, and exploration of the region.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.3"
+  }
+}
